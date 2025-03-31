@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-void meow(void){
-  printf("Meow!\n");
-}
+// create a prototype for the function meow
+void meow(void);
+
 
 int main(void)
 {
@@ -10,4 +10,8 @@ int main(void)
   {
     meow();
   }
+}
+
+void meow(void){
+  printf("Meow!\n");
 }
