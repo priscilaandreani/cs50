@@ -1,13 +1,21 @@
 #include <stdio.h>
 
+void print_row(int n);
+
 int main(void)
 {
-    for (int row = 0; row < 3; row++)
+    const int n = 3;
+    for (int row = 0; row < n; row++)
     {
-        for (int col = 0; col < 3; col++)
-        {
-         printf("#");
-        }
-        printf("\n");
+        print_row(n);
     }
+}
+
+void print_row(int n)
+{
+    for (int col = 0; col < n; col++)
+    {
+        printf("#");
+    }
+    printf("\n");
 }
